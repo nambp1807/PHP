@@ -14,13 +14,7 @@
 </head>
 <body>
 <?php
-function checkString($str, $numberOfLetter){
-    if(strlen($str) > $numberOfLetter){
-        return str_replace(substr($str, $numberOfLetter, strlen($str)-$numberOfLetter),'...', $str);
-    } else{
-        return $str;
-    }
-}
+
         $title = "products";
         $products = [
             [
@@ -225,15 +219,15 @@ function checkString($str, $numberOfLetter){
                 </div>
                 <div class="details-product">
                     <div class="screen-product">
-                        <span>Màn hình :</span><?php echo checkString($product['details']['screen'],50);?></div>
+                        <span>Màn hình :</span><?php echo $product['details']['screen'];?></div>
                     <div class="camera-product">
-                        <span>Camera :</span><?php echo checkString($product['details']['camera'],50);?></div>
+                        <span>Camera :</span><?php echo $product['details']['camera'];?></div>
                     <div class="battery-product">
                         <span>Pin:</span><?php echo $product['details']['battery'];?></div>
                     <div class="ram-product">
                         <span>Ram:</span>6 GB</div>
                     <div class="cpu-product">
-                        <span>CPU:</span><?php echo checkString( $product['details']['cpu'],70);?></div>
+                        <span>CPU:</span><?php echo  $product['details']['cpu'];?></div>
                     <div class="hdh-product">
                         <span>HDH:</span><?php echo $product['details']['hdh'];?></div>
                 </div>
