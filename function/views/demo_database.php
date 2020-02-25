@@ -12,9 +12,9 @@
     }
 
 //demo with prepare statement
-$sql_insert = "INSERT INTO users (username,email,password,age,address,telephone) VALUES(?,?,?,?,?,?); ";
-    $stmt = $conn ->prepare($sql_insert);
-    $stmt ->bind_param("ssssisss",$u,$e,$p,$a,$ad,$t);
+//$sql_insert = "INSERT INTO users (username,email,password,age,address,telephone) VALUES(?,?,?,?,?,?); ";
+//    $stmt = $conn ->prepare($sql_insert);
+//    $stmt ->bind_param("ssssisss",$u,$e,$p,$a,$ad,$t);
 
     //
 //
